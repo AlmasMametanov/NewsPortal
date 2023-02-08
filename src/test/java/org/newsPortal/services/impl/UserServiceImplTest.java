@@ -54,10 +54,10 @@ class UserServiceImplTest {
         userService.createUser(user);
         // then
         ArgumentCaptor<User> userArgumentCaptor =
-                ArgumentCaptor.forClass(User.class); //здесь мы говорим что мне нужен объект типа User для захвата
-        verify(userDAO).createUser(userArgumentCaptor.capture()); //здесь мы захватываем нужный нам объект при вызове метода userDAO.createUser() в service-методе createUser()
-        User capturedUser = userArgumentCaptor.getValue(); //здесь мы конвертируем объект-захвата User в настоящий объект User
-        assertEquals(user, capturedUser); //тут мы сравниваем что во входном параметре в самом UserService при вызове service-метода createUser(тут), тот же объект User что и при вызове userDAO.createUser(тут) в service-методе createUser()
+                ArgumentCaptor.forClass(User.class);
+        verify(userDAO).createUser(userArgumentCaptor.capture());
+        User capturedUser = userArgumentCaptor.getValue();
+        assertEquals(user, capturedUser);
     }
 
     @Test
