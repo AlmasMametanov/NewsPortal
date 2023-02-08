@@ -1,0 +1,7 @@
+hibernate.driver=org.postgresql.Driver
+hibernate.connection.url=jdbc:postgresql://localhost:5432/news_portal
+hibernate.connection.username=
+hibernate.connection.password=
+
+hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+hibernate.show_sql=true
