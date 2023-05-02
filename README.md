@@ -1,5 +1,5 @@
 # NewsPortal project
-It's REST API project using Spring Framework, which executes CRUD operations.<br/> Only backend.
+It's REST API project using Spring Framework, which executes CRUD operations and unit tests.<br/> Only backend.
 ## Technologies
 * Spring Framework, Hibernate
 * Junit 5, Mockito, AssertJ
